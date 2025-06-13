@@ -1,0 +1,27 @@
+CRITICAL - 2025-05-08 14:27:54 --> ParseError: syntax error, unexpected token "-", expecting "," or ";"
+in APPPATH\Controllers\Nilai.php on line 7.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('nilai/tambah', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('nilai/tambah')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('nilai/tambah')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-08 14:28:06 --> ParseError: syntax error, unexpected token "-", expecting "," or ";"
+in APPPATH\Controllers\Nilai.php on line 7.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('nilai/daftar', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('nilai/daftar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('nilai/daftar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-08 15:57:25 --> ErrorException: Undefined variable $nilai
+in APPPATH\Views\nilai_daftar.php on line 49.
+ 1 APPPATH\Views\nilai_daftar.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nilai', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_daftar.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_daftar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_daftar', [], true)
+ 5 APPPATH\Controllers\Nilai.php(25): view('nilai_daftar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->daftar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

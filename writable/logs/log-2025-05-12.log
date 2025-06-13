@@ -1,0 +1,150 @@
+ERROR - 2025-05-12 21:55:25 --> mysqli_sql_exception: Duplicate entry 'MK101' for key 'matakuliah.kode' in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-12 21:55:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MK101' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-12 21:55:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MK101' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 4 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-12 21:55:25 --> [Caused by] mysqli_sql_exception: Duplicate entry 'MK101' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 5 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-12 21:56:54 --> mysqli_sql_exception: Duplicate entry 'MK101' for key 'matakuliah.kode' in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-12 21:56:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MK101' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-12 21:56:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MK101' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 4 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-12 21:56:54 --> [Caused by] mysqli_sql_exception: Duplicate entry 'MK101' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK101\', \'Metodologi Penelitian\', \'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 5 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-12 22:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 22:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 22:14:46 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Matakuliah.php(24): CodeIgniter\Model->__call('dataGet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-12 22:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 22:15:34 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Matakuliah.php(24): CodeIgniter\Model->__call('dataGet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-12 22:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 22:16:32 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Matakuliah.php(24): CodeIgniter\Model->__call('dataGet', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-12 22:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-12 22:18:58 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Matakuliah.php(24): CodeIgniter\Model->__call('where', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-12 23:08:52 --> ParseError: syntax error, unexpected token "}"
+in APPPATH\Controllers\Matakuliah.php on line 41.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('matakuliah/daftar', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('matakuliah/daftar')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('matakuliah/daftar')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-12 23:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:09:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:25:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-12 23:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

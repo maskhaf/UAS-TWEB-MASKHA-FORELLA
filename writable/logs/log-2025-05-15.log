@@ -1,0 +1,419 @@
+INFO - 2025-05-15 13:28:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:28:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 13:33:12 --> Error: Call to undefined function form_open()
+in APPPATH\Views\matakuliah_edit.php on line 26.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 4 APPPATH\Controllers\Matakuliah.php(65): view('matakuliah_edit')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 13:33:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 13:33:20 --> Error: Call to undefined function form_open()
+in APPPATH\Views\matakuliah_edit.php on line 26.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 4 APPPATH\Controllers\Matakuliah.php(65): view('matakuliah_edit')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('13')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 13:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 13:39:55 --> ErrorException: Undefined array key 0
+in APPPATH\Views\matakuliah_edit.php on line 29.
+ 1 APPPATH\Views\matakuliah_edit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(67): view('matakuliah_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 13:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 13:42:13 --> ErrorException: Undefined array key 0
+in APPPATH\Views\matakuliah_edit.php on line 29.
+ 1 APPPATH\Views\matakuliah_edit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(67): view('matakuliah_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 13:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 13:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 13:54:59 --> ErrorException: Undefined array key 0
+in APPPATH\Views\matakuliah_edit.php on line 29.
+ 1 APPPATH\Views\matakuliah_edit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(67): view('matakuliah_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 14:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 14:03:39 --> ErrorException: Undefined array key 0
+in APPPATH\Views\matakuliah_edit.php on line 29.
+ 1 APPPATH\Views\matakuliah_edit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(67): view('matakuliah_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:03:49 --> ArgumentCountError: Too few arguments to function App\Controllers\Matakuliah::update(), 0 passed in C:\laragon\www\transkrip_akademik\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Matakuliah.php on line 69.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->update()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 14:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:04:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 14:04:35 --> ErrorException: Undefined array key 0
+in APPPATH\Views\matakuliah_edit.php on line 29.
+ 1 APPPATH\Views\matakuliah_edit.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\matakuliah_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('matakuliah_edit', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(67): view('matakuliah_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 14:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 14:16:43 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 49.
+ 1 APPPATH\Views\nilai_edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:17:56 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 49.
+ 1 APPPATH\Views\nilai_edit.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:21:24 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:21:34 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:22:34 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:26:25 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:27:33 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:27:34 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:28:43 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:28:54 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:28:55 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:28:57 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:30:02 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:30:11 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:31:19 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-15 14:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-15 14:31:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-15 14:31:43 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:34:29 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:38:57 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:39:12 --> ErrorException: Attempt to read property "1" on string
+in APPPATH\Controllers\Nilai.php on line 64.
+ 1 APPPATH\Controllers\Nilai.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "1" on string', 'C:\\laragon\\www\\transkrip_akademik\\app\\Controllers\\Nilai.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:40:10 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:40:16 --> ErrorException: Attempt to read property "1" on string
+in APPPATH\Controllers\Nilai.php on line 64.
+ 1 APPPATH\Controllers\Nilai.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "1" on string', 'C:\\laragon\\www\\transkrip_akademik\\app\\Controllers\\Nilai.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:40:54 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 14:58:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "transkrip.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transkrip.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('transkrip', [], true)
+ 3 APPPATH\Controllers\Transkrip.php(13): view('transkrip', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Transkrip->tampil()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 15:26:15 --> ErrorException: Undefined variable $transkrip
+in APPPATH\Views\transkrip.php on line 16.
+ 1 APPPATH\Views\transkrip.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transkrip', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\transkrip.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\transkrip.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('transkrip', [], true)
+ 5 APPPATH\Controllers\Transkrip.php(14): view('transkrip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Transkrip->tampil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 15:29:08 --> ErrorException: Undefined property: stdClass::$nomor
+in APPPATH\Views\transkrip.php on line 28.
+ 1 APPPATH\Views\transkrip.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nomor', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\transkrip.php', 28)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\transkrip.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('transkrip', [], true)
+ 5 APPPATH\Controllers\Transkrip.php(14): view('transkrip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Transkrip->tampil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 15:52:02 --> ErrorException: Undefined variable $jumlah_sksn
+in APPPATH\Views\transkrip.php on line 38.
+ 1 APPPATH\Views\transkrip.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jumlah_sksn', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\transkrip.php', 38)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\transkrip.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('transkrip', [], true)
+ 5 APPPATH\Controllers\Transkrip.php(14): view('transkrip', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Transkrip->tampil()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 16:03:08 --> ParseError: syntax error, unexpected token ","
+in APPPATH\Helpers\nilai_helper.php on line 27.
+ 1 APPPATH\Controllers\Transkrip.php(12): helper([...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Transkrip->tampil()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transkrip))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 16:04:42 --> ErrorException: Undefined array key 0
+in APPPATH\Views\nilai_edit.php on line 26.
+ 1 APPPATH\Views\nilai_edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\transkrip_akademik\\app\\Views\\nilai_edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('nilai_edit', [], true)
+ 5 APPPATH\Controllers\Nilai.php(54): view('nilai_edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Nilai->edit('img', 'undraw_profile.svg')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-15 16:27:31 --> ParseError: syntax error, unexpected variable "$cetak_pdf"
+in APPPATH\Controllers\Transkrip.php on line 27.
+ 1 SYSTEMPATH\Router\Router.php(514): CodeIgniter\Router\AutoRouter->getRoute('transkrip/pdf', 'get')
+ 2 SYSTEMPATH\Router\Router.php(210): CodeIgniter\Router\Router->autoRoute('transkrip/pdf')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('transkrip/pdf')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

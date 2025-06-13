@@ -1,0 +1,461 @@
+ERROR - 2025-05-09 15:04:23 --> mysqli_sql_exception: Duplicate entry 'MK103' for key 'matakuliah.kode' in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:04:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MK103' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:04:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'MK103' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK103\', \'Metodologi Penelitian\', \'3\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK103\', \'Metodologi Penelitian\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 4 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:04:23 --> [Caused by] mysqli_sql_exception: Duplicate entry 'MK103' for key 'matakuliah.kode'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK103\', \'Metodologi Penelitian\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK103\', \'Metodologi Penelitian\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK103\', \'Metodologi Penelitian\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 5 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:06:32 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:06:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:06:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:06:32 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:06:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:06:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:06:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:06:59 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('6')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:07:52 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('2')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:07:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:07:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:07:52 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('2')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:16:01 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`transkrip_nilai`.`matakuliah`, CONSTRAINT `matakuliah_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `nilai` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:16:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`transkrip_nilai`.`matakuliah`, CONSTRAINT `matakuliah_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `nilai` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 2 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:16:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`transkrip_nilai`.`matakuliah`, CONSTRAINT `matakuliah_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `nilai` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK102\', \'Teknologi WEB\', \'2\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK102\', \'Teknologi WEB\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 4 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:16:01 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`transkrip_nilai`.`matakuliah`, CONSTRAINT `matakuliah_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `nilai` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK102\', \'Teknologi WEB\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK102\', \'Teknologi WEB\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (\'MK102\', \'Teknologi WEB\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `matakuliah` (`kode`, `matakuliah`, `sks`) VALUES (:kode:, :matakuliah:, :sks:)', [...], false)
+ 5 APPPATH\Models\DML.php(18): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Matakuliah.php(25): App\Models\DML->dataInsert('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:17:56 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('1')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:17:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:17:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:17:56 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('1')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:29:20 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:29:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:29:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:29:20 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:29:33 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:29:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:29:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:29:33 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-09 15:29:49 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`)) in C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\transkrip_akademik\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `ma...', 0)
+#1 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ma...')
+#2 C:\laragon\www\transkrip_akademik\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ma...')
+#3 C:\laragon\www\transkrip_akademik\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ma...', Array, false)
+#4 C:\laragon\www\transkrip_akademik\app\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\laragon\www\transkrip_akademik\app\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', Array)
+#6 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+#7 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\laragon\www\transkrip_akademik\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\transkrip_akademik\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2025-05-09 15:29:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 2 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:29:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 4 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-09 15:29:49 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`transkrip_nilai`.`nilai`, CONSTRAINT `nilai_ibfk_1` FOREIGN KEY (`kode`) REFERENCES `matakuliah` (`kode`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `matakuliah`
+WHERE `mid` = \'9\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `matakuliah`
+WHERE `mid` = :mid:', [...], false)
+ 5 APPPATH\Models\DML.php(23): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Matakuliah.php(30): App\Models\DML->dataDelete('matakuliah', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Matakuliah->hapus('9')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
