@@ -43,9 +43,19 @@ class Buku extends BaseController {
 
     public function delete($id)
     {
-        $model = new BukuModel();
+    $model = new BukuModel();
+
+    try {
         $model->delete($id);
         session()->setFlashdata('success', 'Data buku berhasil dihapus.');
-        return redirect()->to('/buku');
+    } catch (\CodeIgniter\Database\Exceptions\DatabaseException $e) {
+        if (strpos($e->getMessage(), 'foreign key constraint fails') !== false) {
+            session()->setFlashdata('error', 'Data buku tidak dapat dihapus karena sedang digunakan pada tabel peminjaman.');
+        } else {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menghapus data buku.');
+        }
+    }
+
+    return redirect()->to('/buku');
     }
 }
