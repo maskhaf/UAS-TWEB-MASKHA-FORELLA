@@ -75,11 +75,22 @@ class Anggota extends BaseController
         }
     }
 
-    public function delete($id)
-    {
-        $model = new AnggotaModel();
+    public function delete($id) {
+    $model = new AnggotaModel();
+
+    try {
         $model->delete($id);
         session()->setFlashdata('success', 'Data anggota berhasil dihapus.');
-        return redirect()->to('/anggota');
+    } catch (\CodeIgniter\Database\Exceptions\DatabaseException $e) {
+        // Deteksi error foreign key MySQL
+        if (strpos($e->getMessage(), 'foreign key constraint fails') !== false) {
+            session()->setFlashdata('error', 'Data anggota tidak dapat dihapus karena sedang digunakan pada tabel peminjaman.');
+        } else {
+            session()->setFlashdata('error', 'Terjadi kesalahan saat menghapus data anggota.');
+        }
     }
+
+    return redirect()->to('/anggota');
+    }
+
 }
