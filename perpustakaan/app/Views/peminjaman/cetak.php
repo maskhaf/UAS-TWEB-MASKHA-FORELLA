@@ -22,6 +22,7 @@
       color: white;
       padding: 8px;
       border: 1px solid #ccc;
+      text-align: center;
     }
     td {
       border: 1px solid #ccc;
@@ -42,6 +43,7 @@
   <table>
     <thead>
       <tr>
+        <th>No</th>
         <th>Nama Anggota</th>
         <th>Judul Buku</th>
         <th>Tgl Pinjam</th>
@@ -50,8 +52,9 @@
       </tr>
     </thead>
     <tbody>
-      <?php foreach ($peminjaman as $row): ?>
+      <?php $no = 1; foreach ($peminjaman as $row): ?>
       <tr>
+        <td style="text-align: center;"><?= $no++ ?></td>
         <td><?= $row['anggota_nama'] ?></td>
         <td><?= $row['judul_buku'] ?></td>
         <td><?= $row['tgl_pinjam'] ?></td>
