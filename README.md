@@ -36,7 +36,7 @@ Sistem Informasi Perpustakaan ini dirancang untuk memudahkan proses pengelolaan 
 
 1. Clone atau download repository ini
 2. Salin semua file ke dalam direktori www/ (untuk Laragon) atau direktori web server Anda.
-3. pastikan folder perpustakaan berada di C:\laragon\www\. 
+3. pastikan folder perpustakaan berada di C:\laragon\www\
 4. Import file `db_perpus.sql`, file `db_perpus.sql` berada didalam folder Database_SQL.
 5. Tidak di sarankan mengedit nama folder utama `perpustakaan`, jika diubah pastikan anda mengedit pada bagian BaseURL yang berada di Config App.
 6. Jalankan di local server (`http://localhost/perpustakaan/public`)
